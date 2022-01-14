@@ -1,0 +1,69 @@
+html{
+  font-size: 90%;
+}
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #f7faed;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 96rem) {
+  .form-box {
+    flex-direction: column;
+
+  }
+}
+
+@media screen and (max-width: 57rem) {
+  .form-box {
+    flex-direction: column;
+    /* border-radius: 0px; */
+  }
+  html{
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 44rem) {
+  .form-box {
+    flex-direction: column;
+    /* border-radius: 0px; */
+  }
+  html{
+    font-size: 60%;
+
+  }
+}
+
+@media screen and (max-width: 32rem) {
+  .form-box {
+    flex-direction: column;
+  }
+  html{
+    font-size: 40%;
+  }
+}
+
+@media screen and (max-width: 22rem) {
+  .form-box {
+    flex-direction: column;
+    /* border-radius: 0px; */
+  }
+  html{
+    font-size: 30%;
+  }
+}
+
+@media screen and (max-width: 13rem) {
+  html{
+    font-size: 20%;
+  }
+  .form-box{
+    /* border-radius: 20px; */
+    flex-direction: column;
+  }
+}

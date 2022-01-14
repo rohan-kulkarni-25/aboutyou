@@ -1,0 +1,29 @@
+.load{
+  width: 10rem;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  opacity: 1;
+}
+
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+transform: rotate(360deg);
+  }
+  
+}
+
+.blur{
+  opacity: 0.1;
+}
+
+.hide{
+  display: none;
+}

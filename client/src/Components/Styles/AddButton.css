@@ -1,0 +1,30 @@
+.addyourself{
+  display: flex;
+  justify-content: right;
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 1rem;
+}
+
+.add {
+  cursor: pointer;
+  background-color: white;
+  border: 0px;
+  padding: 1rem;
+  font-size: 1.8rem;
+  box-shadow: 2px 2px 10px gray;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+.profile {
+  width: 1.5rem;
+}
+
+.add:hover{
+  transition-duration: 0.5s;
+  transform: scale(1.02);
+}

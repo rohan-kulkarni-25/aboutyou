@@ -1,0 +1,103 @@
+.user-box {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 10px gray;
+  background-color: white;
+  height: 38rem;
+  border-radius: 4rem;
+  width: 24rem;
+  margin: 2rem;
+  cursor: pointer;
+}
+
+.user-box:hover{
+  transition-duration: 0.5s;
+  transform: scale(1.02);
+}
+
+.img-box {
+  /* background-color: #a34c64; */
+  background: hsla(343, 36%, 47%, 1);
+
+  background: linear-gradient(
+    45deg,
+    hsla(343, 36%, 47%, 1) 42%,
+    hsla(349, 49%, 61%, 1) 73%
+  );
+
+  background: -moz-linear-gradient(
+    45deg,
+    hsla(343, 36%, 47%, 1) 42%,
+    hsla(349, 49%, 61%, 1) 73%
+  );
+
+  background: -webkit-linear-gradient(
+    45deg,
+    hsla(343, 36%, 47%, 1) 42%,
+    hsla(349, 49%, 61%, 1) 73%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A34C64", endColorstr="#CC6A7C", GradientType=1 );
+  border-radius: 4rem;
+  /* border-radius: 80%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
+
+
+.propic {
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+}
+
+.content-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #828189;
+  padding: 2rem;
+}
+
+.name{
+  /* color: black; */
+  color: #828189;
+  font-size: 1.5rem; 
+}
+
+.headline{
+  color: #828189;
+  font-size: 0.8rem; 
+  padding-top: 0.8rem;
+}
+
+.socialbox{
+  padding: 1rem;
+}
+
+.socialbox img{
+  opacity: 0.5;
+  width: 2rem;
+  padding: 0.5rem;
+}
+
+.socialbox img:hover{
+  cursor: pointer;
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.bio{
+  color: #828189;
+  width: 20rem;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
