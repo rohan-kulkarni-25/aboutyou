@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const app = express();
+var cors = require("cors");
 const morgan = require('morgan')
 const fileUpload = require('express-fileupload');
 
@@ -11,7 +12,7 @@ if (process.env.NODE_ENV == 'production') {
     res.sendFile(path.resolve(__dirname,'client','build','index.html'))
   })
 }
-
+app.use(cors());
 
 // Regular Middlewares 
 app.use(express.json());

@@ -5,6 +5,7 @@ const cloudinary = require('cloudinary');
 exports.displayAboutEveryone = ( async (req,res,next) => {
 
   const data = await User.find();
+  console.log(data);
   res.status(200).json(data);
 
 })

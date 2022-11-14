@@ -40,13 +40,16 @@ export default function AddYourData(props) {
     const config = {
       onUploadProgress: progressEvent => { console.log((progressEvent.loaded / progressEvent.total) * 100) }
     }
-    axios.post('/api/v1/addaboutyou', formData, config).then(res => {
-      const page = res.data.page;
-      setload(true)
-      setPage(page)
-    }).catch(error => {
-      console.log(error);
-    });
+    axios
+      .post("http://localhost:4002/api/v1/addaboutyou", formData, config)
+      .then((res) => {
+        const page = res.data.page;
+        setload(true);
+        setPage(page);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }
 
   const handleFileSelect = (event) => {

@@ -7,18 +7,21 @@ export default function AllUsers(props) {
   const [item, setitem] = useState([]);
 
   const getUsers = async () => {
-
-    const response = await fetch("/api/v1")
+    const response = await fetch("http://localhost:4002/api/v1")
       .then((res) => res.json())
-      .then((data) => { setitem(data); setload(false); console.log(data); });
+      .then((data) => {
+        setitem(data);
+        setload(false);
+        console.log(data);
+      });
   };
-  const loadUseEffect = [1]
+  const loadUseEffect = [1];
   useEffect(() => {
     getUsers();
   }, loadUseEffect);
 
   return (
-    <div className={(load) ? "allUsers blur" : "allUsers"}>
+    <div className={load ? "allUsers blur" : "allUsers"}>
       {item.map((element) => (
         <UserBox
           key={element._id}
